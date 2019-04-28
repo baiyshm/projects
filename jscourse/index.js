@@ -1,6 +1,15 @@
 'use strict';
 
-var a=prompt("Are you 18?", "Yes");
-var massiv = ['23423432','32432423423'];
-console.log(a);
-console.log(typeof(massiv));
+var money = prompt('Ваш бюджет на месяц?');
+var time = prompt('Введите дату в формате YYYY-MM-DD');
+var appData={
+    budjet:money,
+    timeData:time,
+    expenses:{
+        toplivo:prompt('Введите обязательную статью расходов в этом месяце'),
+        komUslugi:prompt('Во сколько обойдется?')
+    },
+    optionalExpenses:{},
+    income:[],
+    savings:false
+}
